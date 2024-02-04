@@ -10,6 +10,7 @@ resource "azurerm_storage_account" "mystorage" {
   location                 = var.location
   account_tier             = var.tier
   account_replication_type = var.replication_type
+  account_kind             = var.kind
 
   tags = {
     environment = "staging"
